@@ -2,11 +2,8 @@ import { createReducer, on } from '@ngrx/store';
 import { Todo } from './models/todo.model';
 import { borrar, crear, editar, limpiarTodo, toggle, toggleAll} from './todo.actions';
  
-export const estadoInicial : Todo[]=[
-    new Todo('COMERSE A LA CHICA A'),
-    new Todo('COMERSE A LA CHICA M'),
-    new Todo('COMERSE A LA CHICA QUE SE DEJE'),
-];
+export const estadoInicial : Todo[]=[];
+
  
 const _todoReducer = createReducer(
     estadoInicial,
